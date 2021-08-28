@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Fontawsome cdn link  --> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Home- Robo Tech Valley</title>
+</head>
+<body>
+    <i id="home"></i>
+    <div class="nav_bar">
+        <img id="logo" src="./Images/logo.png" alt="Main Logo">
+        <div class="menus">
+            <li><a class="active-bar" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#ambassador">B.Ambassador</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li class="store"><a target="_blank" href="http://store.robotechvalley.com">Store</a></li>
+        </div>
+    </div>
+    <div class="Mobile_nav_bar">
+        <img id="Mobile_logo" src="./Images/logo.png" alt="Main Logo">
+        <div class="menu_bar">
+            <i class="fas fa-bars" id="menuBar"></i>
+            <div class="Mobile_menus" id="MMneu">
+                <li><a class="active-bar" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#ambassador">B.Ambassador</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="store"><a target="_blank" href="http://store.robotechvalley.com">Store</a></li>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var menuIcon = document.getElementById('menuBar');
+        var Mobilemenu = document.getElementById('MMneu');
+        menuIcon.onclick=()=>{
+            Mobilemenu.classList.toggle('Mobile_menus_anim');
+        }
+
+        
+
+    </script>
+    <script>
+        var navb = document.querySelector('.nav_bar');
+        var Mnavb = document.querySelector('.Mobile_nav_bar');
+
+        var body = document.querySelector('body');
+        body.onscroll=()=>{
+            if(window.scrollY>=20){
+                navb.classList.add('sticky_bar');
+                document.getElementById('logo').style.maxWidth='70px';
+                Mnavb.classList.add('Mobile_sticky_bar');
+            }else{
+                navb.classList.remove('sticky_bar');
+                document.getElementById('logo').style.maxWidth='100px';
+                Mnavb.classList.remove('Mobile_sticky_bar');
+            }
+        }
+    </script>
+    <!-- Header section start -->
+    <section  class="header-sec">
+        <div class="header_div header-sec-1">
+            <div class="defination_title">
+                <p><span>E-Commerce</span> | <span>Digital Services</span></p>
+                <h1>Robo Tech Valley</h1>
+                <a href="mailto:cv.robotechvalley@gmail.com">Contact Us</a>
+            </div>
+        </div>
+        <div class="header_div header-sec-2" style="overflow: hidden;" id="roboimg">
+            <img src="./Images/robo.png" alt="Robo">
+        </div>
+    </section>
+<!-- Clients section start -->
+
+
+    <section class="clients_sec">
+        <div class="owl-carousel owl-theme">
+            <div><img src="./Images/copamy1.png" alt=""></div>
+            <div><img src="./Images/copamy2.png" alt=""></div>
+            <div><img src="./Images/copamy3.png" alt=""></div>
+            <div><img src="./Images/copamy4.png" alt=""></div>
+            <div><img src="./Images/copamy5.png" alt=""></div>
+            <div><img src="./Images/copamy6.png" alt=""></div>
+            <div><img src="./Images/copamy4.png" alt=""></div>
+            <div><img src="./Images/copamy5.png" alt=""></div>
+            <div><img src="./Images/copamy2.png" alt=""></div>
+            <div><img src="./Images/copamy6.png" alt=""></div>
+          </div>
+    </section>
+
+<!-- About section start -->
+
+<section id="about" class="about_sec">
+    <div class="about_div">
+        <div class="about_details">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi ducimus deserunt nihil dicta accusamus suscipit incidunt beatae, aut exercitationem officia doloribus eos, molestiae ipsum aliquid tenetur earum voluptatibus unde. Dolores ducimus doloribus maxime, ex quam non repudiandae cumque illum, odio aperiam facilis! Id eos animi iste quae, ab cupiditate.</p>
+            <a href="/">Read More</a>
+        </div>
+        <img src="./Images/robotic.jpg" alt="">
+    </div>
+</section>
+
+
+
+<!-- Looking section start -->
+    <section class="loogking_sec">
+        <svg class="svgone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(219, 239, 253)" fill-opacity="1" d="M0,192L1440,288L1440,320L0,320Z"></path></svg>
+        <div class="looking_2_div">
+            <div class="looking_div">
+                <h1>456+</h1>
+                <p>Clients</p>
+            </div>
+            <div class="looking_div">
+                <h1>230+</h1>
+                <p>Services</p>
+            </div>
+            <div class="looking_div">
+                <h1>2356+</h1>
+                <p>Students</p>
+            </div>
+            <div class="looking_div">
+                <h1>10+</h1>
+                <p>Courses</p>
+            </div>
+            <div class="looking_div">
+                <h1>124+</h1>
+                <p>Blogs</p>
+            </div>
+        </div>
+        <svg class="svgtwo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L1440,256L1440,320L0,320Z"></path></svg>    
+    </section>
+<!-- service section start -->
+    <section id="service" class="service_sec">
+        <div class="service_title">
+            <h2>Services</h2>
+        </div>
+
+        <div class="service_box">
+            <div class="service service1">
+                <i class="fab fa-android fa-3x mb-3"></i>
+                <h4>Android Application Development</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-desktop fa-3x mb-3"></i>
+                <h4>Desktop Application Development</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-robot fa-3x mb-3"></i>
+                <h4>Robotics Project & Solution</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-sitemap fa-3x mb-3"></i>
+                <h4>Web Application Development</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-parachute-box fa-3x mb-3"></i>
+                <h4>Internet of Things-IOT</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-broadcast-tower fa-3x mb-3"></i>
+                <h4>AI Solution</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-photo-video fa-3x mb-3"></i>
+                <h4>Motion Graphics & 2D Animation</h4>
+            </div>
+            <div class="service">
+                <i class="fas fa-drone fa-3x mb-3"></i>
+                <h4>Drone Videography</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team section start -->
+
+    <section id="team" class="team_sec">
+        <div class="service_title">
+            <h2>Our Team</h2>
+        </div>
+        <i class="fas fa-angle-left nebtn previous"></i>
+        <i class="fas fa-angle-right nebtn next"></i>
+        <div class="team">
+            <div class="d-flex team_nested">
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_member">
+                <img src="./Images/autor.jpg" alt="">
+                <div class="member_info">
+                    <h4>Shahriar Hussain</h4>
+                    <p>Web Developer</p>
+                    <div class="memberS_contact">
+                        <a href="/"><i class="fab fa-facebook"></i></a>
+                        <a href="/"><i class="fab fa-instagram"></i></a>
+                        <a href="/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Portfolio section start -->
+    <section id="portfolio" class="portfolio_sec">
+        <div class="service_title">
+            <h2>Portfolio</h2>
+        </div>
+
+        <div class="service_box">
+            <div class="service portsolio_box">
+                <img src="./Images/portfolio1.png" alt="">
+                <div class="overeffect">
+                    <a href="/"><i class="fas fa-link fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="service portsolio_box">
+                <img src="./Images/portfolio.png" alt="">
+                <div class="overeffect">
+                    <a href="/"><i class="fas fa-link fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="service portsolio_box">
+                <img src="./Images/portfolio3.png" alt="">
+                <div class="overeffect">
+                    <a href="/"><i class="fas fa-link fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="service portsolio_box">
+                <img src="./Images/portfolio4.png" alt="">
+                <div class="overeffect">
+                    <a href="/"><i class="fas fa-link fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="service portsolio_box">
+                <img src="./Images/portfolio5.png" alt="">
+                <div class="overeffect">
+                    <a href="/"><i class="fas fa-link fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="service portsolio_box">
+                <img src="./Images/portfolio6.png" alt="">
+                <div class="overeffect">
+                    <a href="/"><i class="fas fa-link fa-2x"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Blog section start -->
+
+
+    <section class="ambassador_sec" id="ambassador">
+        <div class="service_title">
+            <h2 class="mb-5 ftg">Brand Ambassador</h2>
+        </div>
+            <div class="swiper mySwiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events">
+                <div class="swiper-wrapper" style="cursor: grab; transition-duration: 0ms; transform: translate3d(-882px, 0px, 0px);" id="swiper-wrapper-31056ac96d47e10525" aria-live="polite">
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -500px) rotateX(0deg) rotateY(250deg) scale(1); z-index: -4;" role="group" aria-label="1 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/autor.jpg">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p class="amba_info_details"> est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>
+                  <div class="swiper-slide-shadow-left" style="opacity: 5; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(200deg) scale(1); z-index: -3;" role="group" aria-label="2 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/robo_7.png">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 4; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(150deg) scale(1); z-index: -2;" role="group" aria-label="3 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/autor.jpg">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 3; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(100deg) scale(1); z-index: -1;" role="group" aria-label="4 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/autor.jpg">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 2; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible swiper-slide-prev" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(50deg) scale(1); z-index: 0;" role="group" aria-label="5 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/robo_4.png">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Dhaka University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1;" role="group" aria-label="6 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/robo_1.png">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible swiper-slide-next" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg) scale(1); z-index: 0;" role="group" aria-label="7 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/autor.jpg">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(-100deg) scale(1); z-index: -1;" role="group" aria-label="8 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/portfolio5.png">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 2; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-visible" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(-150deg) scale(1); z-index: -2;" role="group" aria-label="9 / 9">
+                    <div class="ambassador_div">
+                        <img src="./Images/portfolio6.png">
+                        <div class="ambassador_info">
+                            <h5>Shahriar Hussain</h5>
+                            <p class="amba_institute">Jagannath University, Dhaka</p>
+                            <p>Lorem ipsum dolor Facilis, est doloribus! Non voluptatem earum provident minus</p>
+                        </div>
+                    </div>                  
+                    <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 3; transition-duration: 0ms;"></div></div>
+                </div>
+            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          
+    </section>
+
+
+
+    <!-- Blog section start -->
+
+    <section id="blog" class="blog_sec">
+        <div class="service_title">
+            <h2 class="mb-5 ftg">From The Blog</h2>
+        </div>
+        <div class="blog_box">
+            <div class="blogs">
+                <img src="./Images/portfolio6.png" alt="">
+                <a href=""><p class="mt-3 title">Lorem ipsum dolor, sit consectetur....</p></a>
+                <p class='sort_descript'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur nam quas sequi, eligendi maiores.</p>
+                <div class="autorinfo">
+                    <img src="./Images/autor.jpg" alt="">
+                    <div class="infois">
+                        <p>Shahriar Hussain</p>
+                        <p>Silver</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <img src="./Images/portfolio5.png" alt="">
+                <a href=""><p class="mt-3 title">Lorem ipsum dolor, sit consectetur....</p></a>
+                <p class='sort_descript'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur nam quas sequi, eligendi maiores.</p>
+                <div class="autorinfo">
+                    <img src="./Images/autor.jpg" alt="">
+                    <div class="infois">
+                        <p>Shahriar Hussain</p>
+                        <p>Silver</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs populer_blogs">
+                <p class="populerBlog mb-3 pb-2">Most Populer Blog</p>
+                <div class="populer_blog_details">
+                    <img src="./Images/portfolio5.png" alt="">
+                    <div class="pb_infois">
+                        <a href=""><p class="mt-3 title">Lorem ipsum dolor, sit consectetur....</p></a>
+                        <p>Shahriar Hussain</p>
+                    </div>
+                </div>
+                <div class="populer_blog_details">
+                    <img src="./Images/portfolio.png" alt="">
+                    <div class="pb_infois">
+                        <a href=""><p class="mt-3 title">Lorem ipsum dolor, sit consectetur....</p></a>
+                        <p>Shahriar Hussain</p>
+                    </div>
+                </div>
+                <div class="populer_blog_details">
+                    <img src="./Images/portfolio3.png" alt="">
+                    <div class="pb_infois">
+                        <p class="mt-3 title">Lorem ipsum dolor, sit consectetur....</p>
+                        <p>Shahriar Hussain</p>
+                    </div>
+                </div>
+                <div class="populer_blog_details">
+                    <img src="./Images/portfolio1.png" alt="">
+                    <div class="pb_infois">
+                        <p class="mt-3 title">Lorem ipsum dolor, sit consectetur....</p>
+                        <p>Shahriar Hussain</p>
+                    </div>
+                </div>
+                <a class="btn btn-primary btn-sm" href="/blog.html">More <i class="fas fa-arrow-right"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fill-opacity="1" d="M0,320L1440,160L1440,320L0,320Z"></path></svg>    
+    
+    
+    <section class="footer_sec">
+        <div class="footer">
+            <img src="./Images/logo_footer.png" alt="">
+            <h3 class="footer_title mb-5">ROBO TECH VALLEY</h3>
+            <div class="social_links mb-5">
+                <li><a href="https://www.facebook.com/robotechvalley/"><i class="fab fa-facebook" ></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCqzD-1OfN0cvgazrgQIBebQ"><i class="fab fa-youtube" ></i></a></li>
+                <li><a href="https://bd.linkedin.com/company/robo-tech-valley"><i class="fab fa-linkedin" ></i></a></li>
+                <li><a href="https://www.pinterest.com/robotechv/"><i class="fab fa-pinterest" ></i></a></li>
+            </div>
+            <p>© 2021 Robo Tech All Right Reserved</p>
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        //header  right side img slider
+        var roboimg = ['robo_1.png','robo_2.png','robo_3.gif','robo_4.png','robo_5.gif','robo_6.png','robo_7.png'];
+        var robo = document.getElementById('roboimg').src;
+        var time=0;
+        var animationstart = setInterval(() => {
+            var imgsrc=roboimg[time];
+            var i = document.getElementById('roboimg').innerHTML='<img src="./Images/'+imgsrc+'" alt="Robo">';
+            console.log(i);
+            time++;
+            if(time>=7){
+                time=0;
+            }
+        }, 5000);
+
+        //team section scroll controller
+
+        var next = document.querySelector('.next');
+        var previous = document.querySelector('.previous');
+        var team = document.querySelector('.team');
+
+        next.onclick=()=>{
+            team.scrollBy(100,0);
+        }
+        previous.onclick=()=>{
+            team.scrollBy(-100,0);
+        }
+
+        //owl calresole call
+
+            $('.owl-carousel').owlCarousel({
+                autoplay:true,
+                loop:true,
+                dots:false,
+                autoplayTimeout: 2000,
+                autoplaySpeed: 4500,
+                sliderTransition:'linear',
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:2,
+                        margin:20,
+                    },
+                    500:{
+                        items:3,
+                        margin:20,
+                    },
+                    600:{
+                        items:4,
+                        margin:20,
+                    },
+                    800:{
+                        items:4,
+                        margin:20,
+                    },
+                    1200:{
+                        items:4
+                    },
+                }
+            });
+        
+
+    </script>
+
+    <!-- smooth scrolling effect -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+       // Add smooth scrolling to all links
+       $("a").on('click', function(event) {
+     
+         // Make sure this.hash has a value before overriding default behavior
+         if (this.hash !== "") {
+           // Prevent default anchor click behavior
+           event.preventDefault();
+     
+           // Store hash
+           var hash = this.hash;
+     
+           // Using jQuery's animate() method to add smooth page scroll
+           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+           $('html, body').animate({
+             scrollTop: $(hash).offset().top
+           }, 800, function(){
+     
+             // Add hash (#) to URL when done scrolling (default click behavior)
+             window.location.hash = hash;
+           });
+         } // End if
+       });
+     });
+     </script> 
+         <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+
+</body>
+</html>

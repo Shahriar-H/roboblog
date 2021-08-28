@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(235, 234, 233);
+}
+
+
+/* <!-- feature section start --> */
+
+.feature_div{
+    height: 400px;
+    width: 100%;
+    padding: 10px 50px 10px 50px !important;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel_div{
+    height: 100%;
+    width: 57%;
+}
+.Todays_post{
+    width: 40%;
+}
+.carousel{
+    height: 100%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    opacity: 0;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+.carousel:hover .carousel-control-prev-icon, .carousel:hover .carousel-control-next-icon{
+    opacity: 1;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.carousel-item img{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.post_info{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.789), transparent);
+    padding: 10px;
+}
+.post_info a{
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+    
+.post_info a h4{
+    margin-top: 7px;
+}
+.post_info a:hover{
+    color: gray;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.recent_post{
+    padding: 5px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+}
+.recent_post_div{
+    background-color: white;
+    padding: 13px;
+    margin: 4px;
+    margin-left: 0;
+    margin-right: 0;
+}
+h4{
+    line-height: 0.8;
+}
+.recent_post_div h4 a{
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+.authorDetaBlog{
+    margin: 0;
+    padding: 0;
+    color: gray;
+    font-size: 13px;
+}
+.authorDetaBlogFea{
+    font-size: 13px;
+    padding: 4px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* <!-- feature section start --> */
+.blog_post_list{
+    padding: 100px 50px 100px 50px !important;
+    display: flex;
+    justify-content: space-between;
+}
+.blog_list{
+    width: 64%;
+}
+.right_side_bar{
+    width: 34%;
+}
+.blog_div img{
+    height: 150px;
+    width: 250px;
+    margin-right: 20px;
+}
+.blog_div{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(0, 140, 255);
+}
+.blog_info_litile a{
+    color: black;
+    font-size: 20px;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.bnReadMore{
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+.populer_post_div{
+    display: flex;
+}
+.populer_post_div img{
+    height: 60px;
+    width: 60px;
+    margin-right: 14px;
+}
+.populer_post_div_category{
+    display: flex;
+    justify-content: space-between;
+}
+.populer_post_div_category p{
+    font-weight: bold;
+}
+.populer_post_div_category p a{
+    color: black;
+}
+.populer_post_div_category p a:hover{
+    color: rgb(0, 132, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:991px){
+
+    .feature_sec{
+        margin-top: 70px;
+    }
+    .feature_div{
+        display: block;
+        height: auto;
+    }
+    .carousel_div{
+        width: 100%;
+    }
+    .Todays_post{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .blog_post_list{
+        display: block;
+    }
+    .blog_list {
+        width: 100%;
+    }
+    .right_side_bar {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:200px) and (max-width:768px){
+
+    .blog_div {
+        display: block;
+    }
+    .blog_info_litile{
+        margin-top: 13px;
+    }
+
+}
+@media only screen and (min-width:200px) and (max-width:576px){
+    .carousel-item img {
+        height: 240px;
+    }
+    a h4{
+        font-size: 16px;
+    }
+    .feature_div {
+        padding: 10px 20px 10px 20px !important;
+    }
+    .blog_post_list {
+        padding: 10px 20px 10px 20px !important;
+    }
+    .blog_info_litile a{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
